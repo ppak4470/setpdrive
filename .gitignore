@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+.idea/
+.kotlin/
+build/
+local.properties
+.DS_Store
+captures/
+*.log
+# release signing material never goes in the repository
+signing/
+*.jks
+*.keystore
+*.p12
+*.pfx
+.gradle-cache/
+.android-build/
+.tools/
+verification-*/
+deliverables-*/

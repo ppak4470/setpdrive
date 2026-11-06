@@ -1,0 +1,46 @@
+{
+  "package": "kr.stepdrive.app.contest",
+  "version": "0.2.5-contest1",
+  "versionCode": 17,
+  "apk_bytes": 42381403,
+  "apk_sha256": "b3c3c26a7254a4b553bbbd69eab9fa78a89aca828d6e85568831435e38c86c76",
+  "installed_apk_sha256": "b3c3c26a7254a4b553bbbd69eab9fa78a89aca828d6e85568831435e38c86c76",
+  "certificate_sha256": "a9b0dd04e29a921d5bee1944c646664c667e846369637dc617cff39c90a2e6a4",
+  "debug": false,
+  "force_demo": false,
+  "alignment": true,
+  "unit": {
+    "core": {
+      "tests": 107,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "execution": "unchanged; existing passing results reused by Gradle"
+    },
+    "app_release": {
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "execution": "executed for the release variant"
+    }
+  },
+  "lint": {
+    "Warning": 6
+  },
+  "installed_packages": {
+    "kr.stepdrive.app": "0.2.7",
+    "kr.stepdrive.app.validation": "0.2.5-fixed-test4",
+    "kr.stepdrive.app.contest": "0.2.5-contest1"
+  },
+  "production_files_identical_to_fixed_test4": 64,
+  "missing_signing_fails_closed": true,
+  "release_emulator_checks": [
+    "PASS Android file records persist across store recreation",
+    "PASS activity recreated five times",
+    "PASS navigation adapter restart",
+    "PASS screen restrictions stop and reconnect fail closed",
+    "PASS speed permission adapter deny allow revoke allow",
+    "PASS vehicle subscription restart three times"
+  ]
+}

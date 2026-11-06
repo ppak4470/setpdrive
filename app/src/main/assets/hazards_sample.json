@@ -1,0 +1,7 @@
+[
+  {"id": "H-1", "name": "성수사거리", "center": {"lat": 37.5445, "lng": 127.0560}, "radiusM": 60, "accidentCount": 14, "casualtyCount": 21, "year": 2023},
+  {"id": "H-2", "name": "뚝섬역 교차로", "center": {"lat": 37.5472, "lng": 127.0473}, "radiusM": 60, "accidentCount": 9, "casualtyCount": 12, "year": 2023},
+  {"id": "H-3", "name": "영동대교 북단", "center": {"lat": 37.5340, "lng": 127.0610}, "radiusM": 80, "accidentCount": 17, "casualtyCount": 25, "year": 2023},
+  {"id": "H-4", "name": "건대입구역 사거리", "center": {"lat": 37.5404, "lng": 127.0697}, "radiusM": 60, "accidentCount": 11, "casualtyCount": 15, "year": 2023},
+  {"id": "H-5", "name": "서울숲 입구 교차로", "center": {"lat": 37.5436, "lng": 127.0399}, "radiusM": 50, "accidentCount": 7, "casualtyCount": 9, "year": 2023}
+]

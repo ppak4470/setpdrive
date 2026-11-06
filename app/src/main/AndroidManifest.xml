@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Keeps the practice session alive (with a notification) while the car's navigation is in front -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Android Automotive car properties: vehicle speed (runtime permission) and gear selection -->
+    <uses-permission android:name="android.car.permission.CAR_SPEED" />
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+
+    <!-- Pleos Vehicle SDK (public, protectionLevel normal): turn signal = CAR_LIGHTS; brake, steering angle, odometer = CAR_DRIVE -->
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <uses-permission android:name="pleos.car.permission.CAR_LIGHTS" />
+    <uses-permission android:name="pleos.car.permission.CAR_INFO" />
+
+    <!-- Pleos NaviHelper SDK: read route/TBT (NAVI_ROUTE) and set destination/waypoints (NAVI_ROUTE_SEARCH) -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <!-- NaviHelper.requestNavigationScreen(SearchPlace) requires this normal permission. -->
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_MAP" />
+
+    <!-- Pleos FusedLocation SDK (also requested at runtime) -->
+    <uses-permission android:name="pleos.car.permission.FUSED_LOCATION" />
+
+    <!-- Pleos TextToSpeech / SpeechToText SDK (service binding permissions, found in the SDK jars) -->
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE" />
+
+    <!-- Lets the app check whether Pleos services exist (demo mode otherwise). -->
+    <queries>
+        <package android:name="ai.pleos.playground.service.vehicle" />
+        <package android:name="ai.pleos.playground.service.navi" />
+        <package android:name="ai.pleos.playground.caas" />
+    </queries>
+
+    <application
+        android:name=".StepDriveApp"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appLabel}"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StepDrive">
+
+        <uses-library android:name="android.car" android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|uiMode">
+            <!-- Driving-safe: the activity stays usable under UX restrictions; we gate the content ourselves. -->
+            <meta-data android:name="distractionOptimized" android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.PracticeService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Driving-practice coaching that must keep running while the car navigation is in front" />
+        </service>
+    </application>
+</manifest>
