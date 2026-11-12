@@ -1,0 +1,23 @@
+{
+  "CAPTURE_INFO.json": "12713a431f814766cd0a24d98c56143af398c74bfe3500bbbd2ae728a30cde46",
+  "README.md": "cdeef118d57050dd20c184febbac0565252f8f067029798b8118a54fa063dd27",
+  "screens/01_home.png": "a471f30fe084b9dbf6c8c2d8db0635179aac4a57623b559ea0f9e6a2a414ce0b",
+  "screens/02_course.png": "a803c67ef39b3b6f875108e2880e039fe4c9f1d29280f21792992eb20c13ee9c",
+  "screens/03_ready.png": "1578319bd4a4210a5551355990414c541e29e6b1259ff6e5c284ae964882d844",
+  "screens/04_driving.png": "4bdfb73af8013dd85186d0da29b84610d7cf73d13ef1cec097407ebfd314538a",
+  "screens/05_direction_mismatch.png": "0653a8c53978c275d088524a5de63dfbbc4f2d123062669494d87fa5a15a9b32",
+  "screens/06_hazard.png": "28b65178e22f88894a7355ba4b495847733b81b52eff8ea500886a736783e02a",
+  "screens/07_turn_guidance.png": "e70bc7f87d954dbb637e61441de458846e6645029f22c0a5c96b826dd04316d4",
+  "screens/08_parking_start.png": "caa2f0fa303405f1689c850c74d56e04baebae11078489c41acd7b91ae3f0487",
+  "screens/09_reverse_speed_warning.png": "9079ea1c2fe30d38675d0b1386b214dd79ab4e9041a567230dcdaf4c1f3fe91b",
+  "screens/10_parking_check.png": "49e061e134f629f7a91cc4e88a8c988fddeb8f8f3d0fb9a95ec5e2eef6228c86",
+  "screens/11_parking_finish.png": "1664378e50983cc8260e73a07c76661cd7d09bce5b2c16f6f4a93b20f1071610",
+  "screens/12_report.png": "f0426aa32ab177ab069555656cfb1858714e4055ff2de61cf8b89ca90a74b6ae",
+  "screens/13_home_after.png": "8dc213e08d1be308724c07502ccf54712457b5c2db80a5ab5c97532ff8916953",
+  "videos/00_overview.mp4": "bb79dbf8704680229f9dfe5a5b4036fc8eb0289c450fdbc21c5f4951c8bb055d",
+  "videos/01_home_course.mp4": "b5fd7ebdcb18d79c6569bd2e98b585507c68c9fa1417cddc62dd0251b8ca2ca7",
+  "videos/02_direction_check.mp4": "aa5eee157e6d9ee3279471fef4a6c27583eb39887bb9d650f0d95cd24e14cb69",
+  "videos/03_voice_guidance.mp4": "c2e1cd3537943ff43f774b22dc849d2f83da9962d402f768e857f90e390efb28",
+  "videos/04_parking_voice.mp4": "3973bfb95e2cbb232487b456ef6a2680b256831a20a5bdeb947ec811304ed489",
+  "videos/05_report.mp4": "ee269fd076f796c9e561e720fe99967e061fb765b9d531e6f6856f32b5ddc03c"
+}

@@ -1,0 +1,57 @@
+{
+  "capture_date": "2026-11-07",
+  "timezone": "Asia/Seoul",
+  "package": "kr.stepdrive.app.contest",
+  "version": "0.2.5-contest1",
+  "version_code": 17,
+  "apk_sha256": "b3c3c26a7254a4b553bbbd69eab9fa78a89aca828d6e85568831435e38c86c76",
+  "app_source_changed": false,
+  "apk_changed": false,
+  "environment": "Pleos Connect emulator / Android 14",
+  "navigation": "Built-in simulated navigation; Virtual Console vehicle inputs",
+  "capture": "Actual Android display; clips edited from two recorded sessions",
+  "audio": "Simultaneous Windows speaker loopback capture for voice/parking; loudness normalization; no microphone recording; no generated narration",
+  "video_count": 6,
+  "screenshot_count": 13,
+  "still_images": "Native screenshots, with parking images taken from actual video frames",
+  "source_of_car_camera": "Pleos emulator built-in vehicle camera, not StepDrive perception",
+  "continuous_single_run": false,
+  "videos": [
+    {
+      "file": "videos/00_overview.mp4",
+      "duration_seconds": 103.02,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": true
+    },
+    {
+      "file": "videos/01_home_course.mp4",
+      "duration_seconds": 34.02,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": false
+    },
+    {
+      "file": "videos/02_direction_check.mp4",
+      "duration_seconds": 13.0,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": false
+    },
+    {
+      "file": "videos/03_voice_guidance.mp4",
+      "duration_seconds": 27.02,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": true
+    },
+    {
+      "file": "videos/04_parking_voice.mp4",
+      "duration_seconds": 31.0,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": true
+    },
+    {
+      "file": "videos/05_report.mp4",
+      "duration_seconds": 13.0,
+      "resolution": "1920x1080",
+      "actual_app_voice_included": false
+    }
+  ]
+}
