@@ -19,7 +19,7 @@
 
 ## 제출용 Release: contest1 (2026-11-07)
 
-- 앱 파일: `apk/김재혁_스텝드라이브_release.apk` (제출 묶음에 포함).
+- 앱 파일: `apk/StepDrive_스텝드라이브_release.apk` (제출 묶음에 포함).
 - 표시 이름: **스텝드라이브 제출**. 패키지: `kr.stepdrive.app.contest`.
 - 버전: **0.2.5-contest1 / versionCode 17**. 제공된 0.2.5 소스에 fixed-test4까지의 수정을 반영한 제출 빌드입니다. 제공 APK 0.2.7의 소스를 복원한 버전은 아닙니다.
 - 전용 개인 키로 서명하며 `debuggable=false`, `FORCE_DEMO=false`로 빌드합니다. 기존 앱과 검증 앱에 영향을 주지 않고 함께 설치됩니다. 앱별 프로필과 기록은 공유하지 않습니다.
@@ -28,7 +28,7 @@
 ### 먼저 실행하기
 
 1. Pleos Connect 에뮬레이터를 실행합니다. 아래 명령은 Android SDK의 `platform-tools`가 PATH에 있는 경우입니다.
-2. `adb install -r apk/김재혁_스텝드라이브_release.apk`
+2. `adb install -r apk/StepDrive_스텝드라이브_release.apk`
 3. 앱 목록에서 **스텝드라이브 제출**을 열고 위치·마이크·차량 속도·알림 권한을 직접 처리합니다. 차량 속도 권한이 위치 권한으로 표시될 수 있습니다.
 4. 새 연습 프로필과 PIN을 만듭니다. 정차/P 상태에서 **모의 내비 켜기**를 선택하고 코스를 시작하면 에뮬레이터 차량 신호에 따라 시연 경로가 진행됩니다.
 5. `adb forward tcp:8088 tcp:8088` 후 `http://127.0.0.1:8088/`의 Virtual Console로 차량 입력을 조절합니다. 실제 내비와 모의 내비를 구분하세요.
