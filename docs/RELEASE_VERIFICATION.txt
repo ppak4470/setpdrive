@@ -2,7 +2,7 @@
 작성일: 2026-11-07
 
 1. 제출 파일
-- 파일명: StepDrive_스텝드라이브_release.apk
+- 파일명: 김재혁_스텝드라이브_release.apk
 - 앱 표시 이름: 스텝드라이브 제출
 - 패키지: kr.stepdrive.app.contest
 - 버전: 0.2.5-contest1 / versionCode 17
@@ -62,7 +62,7 @@
 - 공모전 시연용 프로토타입 빌드이며 실차용 인증 또는 앱마켓 심사 통과를 뜻하지 않음.
 
 5. 제출 및 재현
-- 제출 ZIP의 StepDrive 폴더에는 소스, README, docs, apk/StepDrive_스텝드라이브_release.apk이 들어 있음.
+- 제출 ZIP의 StepDrive 폴더에는 소스, README, docs, apk/김재혁_스텝드라이브_release.apk이 들어 있음.
 - README의 환경·설치·빌드·모의 내비 사용법을 따를 것.
 - 개인 서명키, 비밀번호, local.properties, 빌드 캐시, 사용자 기록은 제외함.
 - 개인 키는 소유자가 별도 보관함. 공개 저장소에는 절대 추가하지 말 것.
